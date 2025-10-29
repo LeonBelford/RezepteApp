@@ -1,0 +1,38 @@
+{
+  "id": "9",
+  "title": "Vegan chocolate brownies",
+  "difficulty": "Easy",
+  "portion": "Makes 16",
+  "time": "Hands-on time 20 min, plus cooling. Oven time 30 min",
+  "description": "Traditional brownies rely on eggs to help them rise and create that gooey, fudgy texture – but plant-based superstar chia does the job just as well. Give these vegan brownies a try and see why they’re one of our favourite plant-based bakes.",
+  "ingredients": [
+    "325ml unsweetened soy, almond or oat milk",
+    "1 tsp instant coffee powder",
+    "1 tbsp ground chia seeds",
+    "2 tsp vanilla extract",
+    "1 tsp lemon juice",
+    "150g vegan dark chocolate, around 70% cocoa solids",
+    "5 tbsp olive oil",
+    "160g self-raising flour",
+    "35g cocoa powder",
+    "½ tsp bicarbonate of soda",
+    "175g caster sugar",
+    "Icing sugar to dust",
+    "20cm x 20cm square baking tin"
+  ],
+  "method": [
+    {
+      "Step 1": "Heat the oven to 160°C fan/gas 4 and line the tin with baking paper. In a jug, which together the soy milk, coffee, chia, vanilla and lemon juice. Set aside for 10 minutes."
+    },
+    {
+      "Step 2": "Put the chocolate and oil in a heatproof bowl set over a pan of simmering water (ensure the base of the bowl doesn’t touch the water). Heat until melted, stirring occasionally, then set aside."
+    },
+    {
+      "Step 3": "Sift the flour, cocoa powder, bicarbonate of soda and caster sugar together in a large bowl. Pour in the milk mixture and melted chocolate with a pinch of salt, then stir well until combined and pour into the lined tin."
+    },
+    {
+      "Step 4": "Bake for 30-35 minutes until the brownies have set but still have a wobble in the middle. Allow to cool completely in the tin for at least an hour, or ideally overnight. Cut into squares and serve with a dusting of icing sugar."
+    }
+  ],
+  "image": "https://apipics.s3.amazonaws.com/vegan_api/9.jpg"
+}
