@@ -8,11 +8,10 @@ namespace VeganMeal
     {
         public static async Task Main()
         {
-            await RezepteApi.GetRezepte();
+            await NtfyApi.SendMsg(await RezepteApi.GetRezepte());
         }
-
-
-    }
+            }
 
 
 }
+
