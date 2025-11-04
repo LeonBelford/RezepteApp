@@ -1,28 +1,27 @@
-using System.Runtime.CompilerServices;
-using Newtonsoft.Json;
 namespace VeganMeal.API;
 
+using VeganMeal.Models;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Net.Http.Json;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 public static class RezepteApi
 {
 	private static int Id { get; set; }
-	private static int[] OldIds = new int[400];
+	private static int Length { get; set; } = 380;
+	private static string filePath = System.IO.Directory.GetCurrentDirectory();
+ 	private	static HttpClient client = new HttpClient();
 
-	static HttpClient client = new HttpClient();
 
 	public static async Task<JObject> GetRezepte()
 	{
 		Id = RandInt();
-		JObject JData;
-		string filePath = System.IO.Directory.GetCurrentDirectory();
+		JObject JData = new JObject();
+
 		HttpRequestMessage request = new HttpRequestMessage
 		{
 			Method = HttpMethod.Get,
@@ -34,39 +33,44 @@ public static class RezepteApi
 		},
 		};
 
-		using (var response = await client.SendAsync(request))
+		try //trys to call the API, if succesfull the JData objekt will return the content :3
 		{
-			// Creats body where your api call data is stored, also creates a JObjekt :D 
-			response.EnsureSuccessStatusCode();
-			var body = await response.Content.ReadAsStringAsync();
-			JData = JObject.Parse(body);
-			Console.WriteLine(JData);
-			File.WriteAllText("output.json", JData.ToString());
+			using (var response = await client.SendAsync(request))
+			{
+				// Creats body where your api call data is stored, also creates a JObjekt :D 
+				response.EnsureSuccessStatusCode();
+				var body = await response.Content.ReadAsStringAsync();
+				JData = JObject.Parse(body);
+				Console.WriteLine(JData);
+			}
+
+		}
+		catch (Exception e) // if the Api call fails local FIle "output.json" will be loadet
+		{
+			Console.WriteLine(e.Message);
+			try
+			{
+				JData = JObject.Parse(File.ReadAllText(@$"{filePath}/output.json"));
+				Console.WriteLine($"!!! using local safed file !!! \n{JData["id"]} | {JData["title"]}");
+
+			}
+			catch (Exception E)
+			{
+				Console.WriteLine(E.Message);
+			}
 		}
 		return JData;
 	}
+	
 	private static int RandInt()
 	{
-		int newID;
+		// Obvi ig, this Creats a random number and stores it in a array so for now there are no doubble Recipies :3
+		// lowkey need to change that in the future lol ^^
 		Random random = new Random();
-		//  int TempId = random.Next(1, 381);
-
-		while (true)
-		{
-			int TempId = random.Next(1, 381);
-
-			if (!OldIds.Contains(TempId))
-			{
-				OldIds[Id] = TempId;
-				newID = TempId;
-				break;
-			}
-		}
+		int newID = random.Next(1, Length);
+		
 		return newID;
 	}
-	
-
-
 }
 
 

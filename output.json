@@ -1,28 +1,31 @@
 {
-  "id": "81",
-  "title": "Gennaro Contaldo’s limoncello",
+  "id": "236",
+  "title": "Sweet potato and sweetcorn vegan burgers",
   "difficulty": "Easy",
-  "portion": "Makes Around 1.25 litres",
-  "time": "Hands-on time 30 min, plus 17 days infusing and maturing",
-  "description": "Gennaro Contaldo shares his recipe for traditional limoncello, made with the zest of Amalfi lemons. Serve cold or use in desserts.",
+  "portion": "Serves 4",
+  "time": "Hands-on time 25 min, oven time 25 min",
+  "description": "Try our quick and easy vegan burgers for your dinner tonight. Made with sweet potato and sweetcorn, they’re ready in less than an hour and a doddle to make.",
   "ingredients": [
-    "3 unwaxed lemons (use organic lemons if you can, preferably from Amalfi)",
-    "500ml pure grain alcohol (see Know How)",
-    "750ml water",
-    "400g sugar",
-    "Glass bottle(s) with at least 1.25 litres total capacity, sterilised",
-    "Funnel"
+    "400g sweet potatoes, peeled and cut into 1cm chunks",
+    "100g quick-cook polenta",
+    "150g frozen sweetcorn (defrosted)",
+    "½ red onion, very finely chopped",
+    "1 crushed garlic clove",
+    "Small handful of oregano, roughly chopped",
+    "1 tbsp fennel seeds, lightly toasted and crushed",
+    "4 toasted burger buns",
+    "Sliced tomatoes",
+    "Mustard",
+    "Vegan mayonnaise",
+    "Sliced avocado, optional"
   ],
   "method": [
     {
-      "Step 1": "Wash the lemons in cold water and dry well. Use a peeler to pare off the rind, avoiding the white pith. Put the rind in a large jar, pour over the alcohol and seal – it should be airtight. Set in a cool, dry place for 7 days."
+      "Step 1": "Heat the oven to 200°C/180°C fan/gas 6. Bring a medium pan of salted water to the boil and cook the sweet potatoes for 7-8 minutes, then drain and put into a large mixing bowl. Add the polenta, sweetcorn, onion, garlic, oregano,  fennel seeds and a good pinch of salt and pepper."
     },
     {
-      "Step 2": "Seven days later, put the water in a pan and bring to the boil. Add the sugar and stir until it dissolves. Remove the syrup from the heat and allow to cool."
-    },
-    {
-      "Step 3": "Open the jar and strain the alcohol through a sieve into a large jug, discarding the peel. Add the alcohol to the sugar syrup and mix well. Pour into clean, dry bottles. Seal and store in a cool, dark place for at least 10 days."
+      "Step 2": "Shape the mixture into 4 patties and coat each one in a little extra polenta. Put the patties on a roasting tray, brush all over with oil, then bake in the oven for 25 minutes until golden and piping hot throughout. Serve in 4 toasted burger buns with sliced tomatoes, avocado, mustard and vegan mayonnaise."
     }
   ],
-  "image": "https://apipics.s3.amazonaws.com/vegan_api/81.jpg"
+  "image": "https://apipics.s3.amazonaws.com/vegan_api/236.jpg"
 }

@@ -1,6 +1,8 @@
 ﻿using System.Runtime.CompilerServices;
 using System.Threading.Tasks.Sources;
+using Newtonsoft.Json.Linq;
 using VeganMeal.API;
+using VeganMeal.Models;
 
 namespace VeganMeal
 {
@@ -8,10 +10,18 @@ namespace VeganMeal
     {
         public static async Task Main()
         {
-            await NtfyApi.SendMsg(await RezepteApi.GetRezepte());
-        }
+            try
+            {
+                JObject JData = await RezepteApi.GetRezepte();
+                await NtfyApi.SendMsg(JData);
+                SafeRecipie.Safe(JData);
             }
-
-
+            catch (System.Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+    }
 }
 
