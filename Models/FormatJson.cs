@@ -19,7 +19,7 @@ namespace VeganMeal.Models
             }
             foreach (JToken ingredient in JData["ingredients"])
             {
-                AllIngredients += $"\t- {ingredient}\n";
+                AllIngredients += $"- {ingredient}\n";
             }
 
             string Message = $"description :3\n{JData["description"].ToString().ToLower()}\n"

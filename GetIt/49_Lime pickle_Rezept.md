@@ -1,22 +1,22 @@
 # lime pickle
-  	##  difficulty :o easy  |  ID:49
+## difficulty :o easy  |  ID:49
 
 **description :3**
 chef romy gill shares her easy recipe for lime pickle. serve this classic condiment alongside an array of indian dishes.
 
 **what we need :p**
-	- 1 tsp ground coriander
-	- 2 tsp ajwain seeds
-	- 3 tsp cumin seeds
-	- 6 cloves
-	- 10 black peppercorns
-	- 2-3 tsp chilli powder
-	- 1 tsp ground ginger
-	- 1 tsp black salt (kala namak) or fine sea salt
-	- 700g limes (8-9), washed, dried and cut into small chunks – about 5mm
-	- 100ml rapeseed oil
-	- spice grinder or pestle and mortar
-	- large (1 litre) glass jar or a selection of smaller glass jars with lid(s); sterilised
+- 1 tsp ground coriander
+- 2 tsp ajwain seeds
+- 3 tsp cumin seeds
+- 6 cloves
+- 10 black peppercorns
+- 2-3 tsp chilli powder
+- 1 tsp ground ginger
+- 1 tsp black salt (kala namak) or fine sea salt
+- 700g limes (8-9), washed, dried and cut into small chunks – about 5mm
+- 100ml rapeseed oil
+- spice grinder or pestle and mortar
+- large (1 litre) glass jar or a selection of smaller glass jars with lid(s); sterilised
 
 **how to make it :c** 
 step 1:
